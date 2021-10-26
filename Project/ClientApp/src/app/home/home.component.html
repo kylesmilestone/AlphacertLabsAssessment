@@ -1,0 +1,4 @@
+<button (click)="fetchData()">Click me to load the list</button>
+<ul>
+  <li *ngFor="let dataItem of dataItems$ | async">{{ dataItem.id }}: {{ dataItem.value }}</li>
+</ul>
